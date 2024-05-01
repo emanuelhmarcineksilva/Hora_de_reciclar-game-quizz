@@ -449,7 +449,7 @@ hr {
 
     .img-item-lixo {
         width: 30%;
-        margin: 0 auto;
+        margin: 1em auto 2em;
     }
 
     .btnResposta {
@@ -469,7 +469,7 @@ hr {
 
     .img-item-remedio {
         width: 20%;
-        margin: 0 auto;
+        margin: 1em auto 2em;
     }
 
     .btnCaixote {
