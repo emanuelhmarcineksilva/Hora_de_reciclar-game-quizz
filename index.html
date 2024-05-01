@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="logo-lixeira.png" class="icon">
+    <!-- Onde tirei a imagem icom e varias outras "<a target="_blank" href="https://br.vexels.com/png-svg/previsualizar/189911/lata-de-refrigerante-para-lixo">www.vexels.com</a>"-->
+    <link rel="stylesheet" href="style.css">
+    <title>Hora de reciclar</title>
+</head>
+
+<body>
+    <section class="todosCaixotes1">
+        <div class="caixote">
+            <div class="img">
+                <img src="logo-lixeira.png" alt="Quiz Test">
+            </div>
+            <div class="h3">
+                <h3>Está pronto para o desafio???</h3>
+            </div>
+            <div class="botoes">
+                <button class="btnCaixote sim" onclick="estouPronto()">SIM</button>
+                <button class="btnCaixote nao" onclick="temCerteza()">NÃO</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="todosCaixotes2">
+        <div class="caixote">
+            <h3>Você perdeu todas as suas chances!</h3>
+            <button class="btnCaixoteDenovo" onclick="denovo()">Recomeçar</button>
+        </div>
+    </section>
+
+    <section class="chanceCaixa">
+        <!-- local das chances -->
+    </section>
+
+    <section class="nivelCaixaFlex">
+        <section class="nivel">
+            <h5>Começar o jogo</h5>
+            <div class="botoesPlay">
+                <button class="btnPlay play" onclick="perguntasPlay()">PLAY</button>
+                <button class="btnAprender aprender" onclick="comoJogar()">Como jogar</button>
+            </div>
+        </section>
+    </section>
+
+    <section class="quizzCaixaFlex">
+        <!-- local das perguntas -->
+    </section>
+    
+    <section class="ensinando-jogar">
+        <button class="voltar" onclick="voltar()"><img src="seta.png" alt="" class="img-voltar"></button>
+        <div class="separacao">
+            <img src="img-lixeiras-aprender/azul.png" alt="" class="lixeira-aprendendo">
+            <p>Azul - Papel e papelão: São aqueles papéis que já foram usados, como jornais, revistas, caixas de papelão, cadernos velhos. Eles podem ser reciclados e virar novos papéis.</p>        
+        </div>
+        <hr>
+        <div class="separacao">
+            <img src="amarelo-aprender.png" alt="" class="lixeira-aprendendo">
+            <p>Amarelo - Metal: Latas de refrigerante, de sardinha, tampinhas de garrafa, tudo isso é metal reciclável. Quando reciclado, pode ser transformado em novas latas, utensílios domésticos, e até mesmo em estruturas metálicas.</p>
+        </div>
+        <hr>
+        <div class="separacao">
+            <img src="verde-aprender.png" alt="" class="lixeira-aprendendo">
+            <p>Verde - Vidro: Garrafas de suco, potes de geleia, vidros de conserva, tudo isso é vidro reciclável. Eles podem ser derretidos e transformados em novas embalagens de vidro.</p>
+        </div>
+        <hr>
+        <div class="separacao">
+            <img src="vermelho-aprender.png" alt="" class="lixeira-aprendendo">
+            <p>Vermelho - Plástico: Garrafas de água, embalagens de shampoo, potes de iogurte, tudo isso é plástico e pode ser reciclado. Eles vão para a reciclagem e podem ser transformados em novos produtos de plástico.</p>
+        </div>
+        <hr>
+        <div class="separacao">
+            <img src="marrom-aprender.png" alt="" class="lixeira-aprendendo">
+            <p>Marrom: Resíduos orgânicos, de fontes animais ou vegetais, devem ser depositados na lixeira de cor marrom. Esta separação adequada dos resíduos ajuda na compostagem e no tratamento correto desses materiais, contribuindo para práticas mais sustentáveis ​​de gerenciamento de resíduos.</p>
+        </div>
+        <hr>           
+        <div class="separacao">
+            <img src="cinza-aprender.png" alt="" class="lixeira-aprendendo">
+            <p>Cinza - Resíduos que não podem ser reciclados ou reutilizados: Papéis higiênicos, Guardanapos sujos Adesivos, Papel carbono, Fraldas, Absorventes, Fotografias, Espelhos, Esponjas de aço, itens de cerâmica, isopor, EVA, Ampolas de remédio, Lentes de óculos, etc.</p>
+        </div>
+    </section>
+
+    
+
+    <section class="caixaAvaliacao">
+        <div class="caixoteAvaliacao">
+            <div class="img">
+                <img src="logo-lixeira.png" alt="Quiz Test">
+            </div>
+            <h4>Obrigado pela avaliação!</h4>
+            <div class="avali">
+                <!-- local estrelas -->
+            </div>
+        </div>
+    </section>
+
+    <section class="homeCaixa">
+        <a onclick="denovo()"><img src="home.png" alt="" class="home"></a> 
+    </section>
+</body>
+<script src="main.js"></script>
+
+</html>
